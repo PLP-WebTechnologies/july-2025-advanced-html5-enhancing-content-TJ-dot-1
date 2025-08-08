@@ -13,11 +13,10 @@
         <p>Have a look</p>
     </header>
 
-    <section id="lists">
+    <section>
         <h2>Liqour Types </h2>
 
-        <div class="form-row">
-            <div class="form-group">
+        <div>
                 <h3>Whiskies</h3>
                 <ul>
                     <li>Jameson</li>
@@ -27,7 +26,7 @@
                 </ul>
             </div>
 
-            <div class="form-group">
+            <div>
                 <h3>Beers</h3>
                 <ol>
                     <li>White cap</li>
@@ -36,7 +35,7 @@
                 </ol>
             </div>
 
-            <div class="form-group">
+            <div>
                 <h3>Description List</h3>
                 <dl>
                     <dt>HTML5</dt>
@@ -52,7 +51,7 @@
         </div>
     </section>
 
-    <section id="tables">
+    <section>
         <h2>Goods in Store</h2>
         <table>
             <thead>
@@ -92,15 +91,14 @@
         </table>
     </section>
 
-    <section id="media">
+    <section>
         <h2>Media Examples</h2>
-        <div class="media-container">
-            <div class="media-item">
+        <div>
                 <h3>Image</h3>
                 <img src="https://www.pexels.com/photo/rush-hour-chaos-in-hanoi-streets-30829094/"
                     alt="Cars on traffic">
             </div>
-            <div class="media-item">
+            <div>
                 <h3>Video</h3>
                 <video width="400" height="300" controls>
                     <source src="https://www.pexels.com/video/scenic-tea-moment-on-seaside-journey-33016762/"
@@ -109,7 +107,7 @@
                 </video>
                 <p>Scenic tea on sea</p>
             </div>
-            <div class="media-item">
+            <div>
                 <h3>Audio</h3>
                 <audio controls>
                     <source src="https://www.pexels.com/video/close-up-view-of-sound-mixing-equipment-2531140/"
@@ -127,25 +125,25 @@
             <fieldset>
                 <legend><span class="required">Personal Information</span></legend>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="firstName" class="required">First Name</label>
+                <div>
+                    <div>
+                        <label for="firstName">First Name</label>
                         <input type="text" id="firstName" name="firstName" required minlength="2"
                             placeholder="Enter your first name" autocomplete="given-name">
                     </div><br>
                 </div>
-                <div class="form-group">
-                    <label for="lastName" class="required">Last Name</label>
+                <div>
+                    <label for="lastName">Last Name</label>
                     <input type="text" id="lastName" name="lastName" required minlength="2"
                         placeholder="Enter your last name" autocomplete="family-name">
                 </div>
                 </div><br>
-                <div class="form-group">
-                    <label for="email" class="required">Email Address</label>
+                <div>
+                    <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" required placeholder="your.email@example.com"
                         autocomplete="email">
                 </div><br>
-                <div class="form-group">
+                <div>
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone" placeholder="0700000000"
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
@@ -153,12 +151,12 @@
                 </div><br>
                 </div>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="dob" class="required">Date of Birth</label>
+                <div>
+                    <div>
+                        <label for="dob">Date of Birth</label>
                         <input type="date" id="dob" name="dob" required max="2025-01-01">
                     </div><br>
-                    <div class="form-group">
+                    <div>
                         <label for="age">Age</label>
                         <input type="number" id="age" name="age" min="18" max="60" placeholder="18-60" required>
                     </div>
@@ -168,24 +166,24 @@
             <fieldset>
                 <legend>Account Details</legend>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="username" class="required">Username</label>
+                <div>
+                    <div>
+                        <label for="username">Username</label>
                         <input type="text" id="username" name="username" required minlength="4"
                             placeholder="Choose a username" pattern="[a-zA-Z0-9_]+"
                             title="Only letters, numbers, and underscores are allowed">
                     </div><br>
-                    <div class="form-group">
-                        <label for="password" class="required">Password</label>
+                    <div>
+                        <label for="password">Password</label>
                         <input type="password" id="password" name="password" required minlength="8"
                             placeholder="At least 8 characters" autocomplete="new-password">
                     </div>
                 </div><br>
-                <div class="form-group">
+                <div>
                     <label for="website">Website (optional)</label>
                     <input type="url" id="website" name="website" placeholder="https://example.com">
                 </div><br>
-                <div class="form-group">
+                <div>
                     <label for="favcolor">Favorite Color</label>
                     <input type="color" id="favcolor" name="favcolor" value="#4a6fa5">
                 </div><br>
@@ -193,7 +191,7 @@
             <fieldset>
                 <legend>Preferences</legend>
 
-                <div class="form-group">
+                <div>
                     <label>How did you hear about us?</label>
                     <select name="referral" required>
                         <option value="" disabled selected>Select an option</option>
@@ -205,7 +203,7 @@
                     </select>
                 </div>
 
-                <div class="form-group">
+                <div>
                     <label>Interests (select up to 3)</label>
                     <div>
                         <input type="checkbox" id="interest-tech" name="interests" value="technology">
@@ -225,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div>
                     <label>Preferred Contact Method</label>
                     <div>
                         <input type="radio" id="contact-email" name="contactMethod" value="email" checked>
@@ -241,7 +239,7 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div >
                     <label for="satisfaction">Satisfaction Level</label>
                     <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="7">
                 </div>
@@ -250,24 +248,24 @@
             <fieldset>
                 <legend>Additional Information</legend>
 
-                <div class="form-group">
+                <div>
                     <label for="bio">Short Biography</label>
                     <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself (max 500 characters)"
                         maxlength="500"></textarea>
                 </div>
 
-                <div class="form-group">
+                <div>
                     <label for="file">Upload Profile Picture (optional)</label>
                     <input type="file" id="file" name="file" accept="image/*">
                 </div>
             </fieldset>
 
-            <div class="form-group">
+            <div>
                 <input type="checkbox" id="terms" name="terms" required>
                 <label for="terms" class="required">I agree to the terms and conditions</label>
             </div>
 
-            <div class="form-row">
+            <div>
                 <button type="submit">Submit Form</button>
                 <button type="reset">Reset Form</button>
             </div>
