@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Html</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ted's PLP Web Assignment</h1>
+        <p>Have a look</p>
+    </header>
+
+    <section id="lists">
+        <h2>Liqour Types </h2>
+
+        <div class="form-row">
+            <div class="form-group">
+                <h3>Whiskies</h3>
+                <ul>
+                    <li>Jameson</li>
+                    <li>Black Lebel</li>
+                    <li>Black and white</li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <h3>Beers</h3>
+                <ol>
+                    <li>White cap</li>
+                    <li>Balozi</li>
+                    <li>Guinnes</li>
+                </ol>
+            </div>
+
+            <div class="form-group">
+                <h3>Description List</h3>
+                <dl>
+                    <dt>HTML5</dt>
+                    <dd>The latest version of Hypertext Markup Language</dd>
+
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+
+                    <dt>SQL</dt>
+                    <dd>Structured Query Language</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <section id="tables">
+        <h2>Goods in Store</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Laptops</th>
+                    <th>Tvs</th>
+                    <th>Description</th>
+                    <th>Condition</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Macbooks</td>
+                    <td>Tcl</td>
+                    <td>2025 Model</td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                    <td>Linux</td>
+                    <td>Samsung</td>
+                    <td>2024 Model</td>
+                    <td>Mint</td>
+                </tr>
+                <tr>
+                    <td>Windows</td>
+                    <td>Hisense</td>
+                    <td>QLed</td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                    <td>Macbook Air</td>
+                    <td>Synix</td>
+                    <td>OLed</td>
+                    <td>Perfect</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Media Examples</h2>
+        <div class="media-container">
+            <div class="media-item">
+                <h3>Image</h3>
+                <img src="https://www.pexels.com/photo/rush-hour-chaos-in-hanoi-streets-30829094/"
+                    alt="Cars on traffic">
+            </div>
+            <div class="media-item">
+                <h3>Video</h3>
+                <video width="400" height="300" controls>
+                    <source src="https://www.pexels.com/video/scenic-tea-moment-on-seaside-journey-33016762/"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Scenic tea on sea</p>
+            </div>
+            <div class="media-item">
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="https://www.pexels.com/video/close-up-view-of-sound-mixing-equipment-2531140/"
+                        type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Mixer player</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="form">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" action="#" method="post" novalidate>
+            <fieldset>
+                <legend><span class="required">Personal Information</span></legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName" class="required">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required minlength="2"
+                            placeholder="Enter your first name" autocomplete="given-name">
+                    </div><br>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="required">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required minlength="2"
+                        placeholder="Enter your last name" autocomplete="family-name">
+                </div>
+                </div><br>
+                <div class="form-group">
+                    <label for="email" class="required">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com"
+                        autocomplete="email">
+                </div><br>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0700000000"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        title="Please enter a phone number in the format:0700000000">
+                </div><br>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob" class="required">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required max="2025-01-01">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="18" max="60" placeholder="18-60" required>
+                    </div>
+                </div><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="username" class="required">Username</label>
+                        <input type="text" id="username" name="username" required minlength="4"
+                            placeholder="Choose a username" pattern="[a-zA-Z0-9_]+"
+                            title="Only letters, numbers, and underscores are allowed">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="password" class="required">Password</label>
+                        <input type="password" id="password" name="password" required minlength="8"
+                            placeholder="At least 8 characters" autocomplete="new-password">
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <label for="website">Website (optional)</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com">
+                </div><br>
+                <div class="form-group">
+                    <label for="favcolor">Favorite Color</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#4a6fa5">
+                </div><br>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <div class="form-group">
+                    <label>How did you hear about us?</label>
+                    <select name="referral" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="search">Search Engine</option>
+                        <option value="social">Social Media</option>
+                        <option value="friend">Friend/Family</option>
+                        <option value="ad">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Interests (select up to 3)</label>
+                    <div>
+                        <input type="checkbox" id="interest-tech" name="interests" value="technology">
+                        <label for="interest-tech">Technology</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interest-sports" name="interests" value="sports">
+                        <label for="interest-sports">Sports</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interest-music" name="interests" value="music">
+                        <label for="interest-music">Music</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interest-travel" name="interests" value="travel">
+                        <label for="interest-travel">Travel</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Contact Method</label>
+                    <div>
+                        <input type="radio" id="contact-email" name="contactMethod" value="email" checked>
+                        <label for="contact-email">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="contact-phone" name="contactMethod" value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="contact-mail" name="contactMethod" value="mail">
+                        <label for="contact-mail">Whatsapp</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="satisfaction">Satisfaction Level</label>
+                    <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="7">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <div class="form-group">
+                    <label for="bio">Short Biography</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself (max 500 characters)"
+                        maxlength="500"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="file">Upload Profile Picture (optional)</label>
+                    <input type="file" id="file" name="file" accept="image/*">
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" class="required">I agree to the terms and conditions</label>
+            </div>
+
+            <div class="form-row">
+                <button type="submit">Submit Form</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
